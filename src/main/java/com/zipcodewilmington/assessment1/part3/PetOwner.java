@@ -9,12 +9,15 @@ public class PetOwner {
      * @param pets array of Pet object
      */
     public PetOwner(String name, Pet... pets) {
+    name = this.getName();
+    pets = getPets();
     }
 
     /**
      * @param pet pet to be added to the composite collection of Pets
      */
     public void addPet(Pet pet) {
+    pet.setOwner(pet.getOwner());
     }
 
     /**

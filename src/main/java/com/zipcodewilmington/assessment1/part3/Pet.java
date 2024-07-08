@@ -11,7 +11,9 @@ public abstract class Pet implements Animal {
 
     private String name;
     private Integer age;
-    PetOwner petOwner;
+    private PetOwner petOwner;
+
+
     public Pet() {
     }
 
@@ -26,7 +28,7 @@ public abstract class Pet implements Animal {
      * @param age age of this pet
      */
     public Pet(int age) {
-    }
+    age = getAge();}
 
     /**
      * @param name name of this pet
@@ -63,7 +65,19 @@ public abstract class Pet implements Animal {
         return this.petOwner   ;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public PetOwner getPetOwner() {
+        return petOwner;
+    }
+
+    public void setPetOwner(PetOwner petOwner) {
+        this.petOwner = petOwner;
     }
 }
