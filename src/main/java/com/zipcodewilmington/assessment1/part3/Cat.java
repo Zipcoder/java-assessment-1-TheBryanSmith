@@ -25,6 +25,7 @@ public class Cat extends Pet {
 
     }
 
+
     /**
      * nullary constructor
      * by default, a Cat's
@@ -32,12 +33,14 @@ public class Cat extends Pet {
      * age is 0
      */
     public Cat() {
+    super();
     }
 
     /**
      * @return meow as a string
      */
     public String speak() {
-        return null;
+        return "meow";
     }
+
 }
